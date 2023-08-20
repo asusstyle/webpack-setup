@@ -2,19 +2,20 @@
 Plain version of Webpack setup for all javascript &amp; css
 
 # check code for linting
-npm run lint    // "lint": "eslint ./src"
+npm run lint
 
 # start local Server with linting
-npm start    // "start": "npm run lint && webpack serve --config webpack.dev.js"
+npm start
 
 # build code for dev with linting
-npm run dev    // "dev": "npm run lint && webpack --config webpack.dev.js"
+npm run dev
 
 # build code for Production Server with linting
-npm run prod    // "prod": "npm run lint && webpack --config webpack.prod.js"
+npm run prod
 
 # folder structure
-`src/
+```
+src/
 |
 |-- assets/
 |		|
@@ -31,4 +32,5 @@ npm run prod    // "prod": "npm run lint && webpack --config webpack.prod.js"
 |				|-- global/
 |				|-- main.scss
 |
-|-- template.html`
+|-- template.html
+```
