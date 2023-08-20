@@ -1,5 +1,6 @@
 # webpack-setup
-Plain version of Webpack setup for all javascript &amp; css
+Plain version of Webpack setup for minified javascript and css files.
+This will output minified css and minified vendor & main javascript files.
 
 # check code for linting
 npm run lint
@@ -18,19 +19,19 @@ npm run prod
 src/
 |
 |-- assets/
+|	|
+|	|-- images/
+|	|-- scripts/
+|	|	|
+|	|	|-- global/
+|	|	|-- components/
+|	|	|-- index.js
+|	|	|-- vendor.js
+|	|
+|	|-- styles/
 |		|
-|		|-- images/
-|		|-- scripts/
-|		|		|
-|		|		|-- global/
-|		|		|-- components/
-|		|		|-- index.js
-|		|		|-- vendor.js
-|		|
-|		|-- styles/
-|				|
-|				|-- global/
-|				|-- main.scss
+|		|-- global/
+|		|-- main.scss
 |
 |-- template.html
 ```
