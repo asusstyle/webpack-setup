@@ -1,10 +1,10 @@
 {
-	"name": "devamish-exports",
+	"name": "webpack-setup",
 	"version": "1.0.0",
 	"description": "Poject configuration for Devamish",
 	"license": "MIT",
 	"private": true,
-	"keywords": [],
+	"keywords": ["webpack", "javascript", "node", "babel", "sass"],
 	"author": "Ashish Panchal",
 	"scripts": {
 		"lint": "eslint ./src",
