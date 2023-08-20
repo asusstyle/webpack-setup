@@ -1,0 +1,40 @@
+{
+	"name": "devamish-exports",
+	"version": "1.0.0",
+	"description": "Poject configuration for Devamish",
+	"license": "MIT",
+	"private": true,
+	"keywords": [],
+	"author": "Ashish Panchal",
+	"scripts": {
+		"lint": "eslint ./src",
+		"start": "npm run lint && webpack serve --config webpack.dev.js",
+		"dev": "npm run lint && webpack --config webpack.dev.js",
+		"prod": "npm run lint && webpack --config webpack.prod.js"
+	},
+	"browserslist": [
+		"> 0.5%",
+		"last 2 versions"
+	],
+	"dependencies": {
+		"@babel/core": "^7.22.10",
+		"@babel/preset-env": "^7.22.10",
+		"babel-loader": "^9.1.3",
+		"copy-webpack-plugin": "^11.0.0",
+		"css-loader": "^6.8.1",
+		"css-minimizer-webpack-plugin": "^5.0.1",
+		"handlebars-loader": "^1.7.3",
+		"html-webpack-plugin": "^5.5.3",
+		"mini-css-extract-plugin": "^2.7.6",
+		"sass": "^1.66.1",
+		"sass-loader": "^13.3.2",
+		"style-loader": "^3.3.3",
+		"webpack": "^5.88.2",
+		"webpack-cli": "^5.1.4",
+		"webpack-dev-server": "^4.15.1",
+		"webpack-merge": "^5.9.0"
+	},
+	"devDependencies": {
+		"eslint": "^8.47.0"
+	}
+}

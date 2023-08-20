@@ -1,0 +1,44 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "ignorePatterns": ["webpack*.js", "*bundle*.js"],
+    "rules": {
+        "quotes": ["error", "single"],
+        "no-param-reassign": [
+            "error",
+            {
+                "props": true,
+                "ignorePropertyModificationsFor": [
+                    "acc",
+                    "accumulator",
+                    "e",
+                    "ctx",
+                    "req",
+                    "request",
+                    "res",
+                    "response",
+                    "$scope",
+                    "staticContext"
+                ]
+            }
+        ]
+    },
+    "globals": {
+        "$": true,
+        "ga": true,
+        "window": true,
+        "element": true,
+        "console": true,
+        "document": true
+    }
+}
