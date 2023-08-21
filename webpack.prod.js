@@ -19,14 +19,6 @@ module.exports = merge(common, {
 		minimizer: [`...`, new CssMinimizerWebpackPlugin()],
 	},
 	devtool: 'source-map',
-	module: {
-		rules: [
-			{
-				test: /\.scss$/,
-				use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']  // for prod server
-			}
-		]
-	},
 	plugins: [
 		new MiniCssExtractPlugin({ filename: 'assets/styles/[name][contenthash].bundle.css' })
 	]
