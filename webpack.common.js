@@ -28,7 +28,14 @@ module.exports = {
 			},
 			{
 				test: /\.scss$/,
-				use: [ 'style-loader', 'css-loader', 'sass-loader' ]    // for dev server
+				use: [
+					'style-loader',
+					{
+						loader: 'css-loader',
+						options: { url: false }
+					},
+					'sass-loader'
+				]
 			}
 		]
 	},

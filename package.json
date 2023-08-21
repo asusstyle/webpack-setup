@@ -4,7 +4,13 @@
 	"description": "Poject configuration for Devamish",
 	"license": "MIT",
 	"private": true,
-	"keywords": ["webpack", "javascript", "node", "babel", "sass"],
+	"keywords": [
+		"webpack",
+		"javascript",
+		"node",
+		"babel",
+		"sass"
+	],
 	"author": "Ashish Panchal",
 	"scripts": {
 		"lint": "eslint ./src",
@@ -23,7 +29,6 @@
 		"copy-webpack-plugin": "^11.0.0",
 		"css-loader": "^6.8.1",
 		"css-minimizer-webpack-plugin": "^5.0.1",
-		"handlebars-loader": "^1.7.3",
 		"html-webpack-plugin": "^5.5.3",
 		"mini-css-extract-plugin": "^2.7.6",
 		"sass": "^1.66.1",
