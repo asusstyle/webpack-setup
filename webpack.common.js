@@ -37,11 +37,20 @@ module.exports = {
 					},
 					'sass-loader'
 				]
+			},
+			{
+				test: /\.html$/,
+				dependency: { not: ['url'] },
+				type: 'asset/resource',
+				exclude: path.resolve(__dirname, 'src/template.html'),
+				generator: {
+					filename: 'static/[name]/index.html[query]'
+				}
 			}
 		]
 	},
 	plugins: [
-		new MiniCssExtractPlugin({ filename: 'assets/styles/[name].css' }),
+		new MiniCssExtractPlugin(),
 		new CopyWebpackPlugin({
 			patterns: [
 				{ from: path.resolve(__dirname + '/src/assets/images'), to: './assets/images' }

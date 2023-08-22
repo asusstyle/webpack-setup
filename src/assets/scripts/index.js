@@ -1,11 +1,13 @@
 import '../styles/main.scss';
+import '../../pages/about.html';
 
 /**
  * Please add components paths here
  * All components added will be available for lazy loading
  */
 const components = {
-	header: 'components/header/header'
+	header: 'components/header/header',
+	footer: 'components/footer/footer',
 };
 
 export const controller = (() => {
